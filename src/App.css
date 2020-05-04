@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
 #header {
   display: flex;
   flex-direction: row;
@@ -21,9 +25,34 @@
   width: 100%;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#kampanja-logo {
+  height: 35px;
+  width: 35px;
+}
+
+h1 {
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#home {
+  margin-left: 20px;
 }
 
 #header a {
+  font-family: "Roboto", sans-serif;
   position: relative;
   text-decoration: none;
   font-size: 25px;
@@ -72,28 +101,54 @@
 }
 
 #video-container {
-  background-color: #99651C;
-  margin-top: 50px;
+  background-color: #CCA46C;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
 }
 
 #facts {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 85%;
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 15px;
   background-color: white;
   text-align: left;
-  max-width: 875px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 1000px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border: solid 10px;
   border-color: #96FFD3;
 }
 
 .chapter {
   margin-top: 20px;
+}
+
+#verticals {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+  background-color: #99651C;
+}
+
+#sulpu-logo {
+  height: 100px;
+  width: 100px;
+  margin-right: 50px;
 }
 
