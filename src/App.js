@@ -50,7 +50,7 @@ function Video() {
 function Bulletin() {
   return(
     <ShowMoreText
-      lines={2}
+      lines={3}
       more="Lue lisää"
       less="Näytä vähemmän"
       anchorClass=""
@@ -59,7 +59,7 @@ function Bulletin() {
       <div class="chapter">Energiapäätökset ovat vaikeita - miten voit tietää, onko käyttämäsi energia taloudellista, ympäristöystävällistä ja huoletonta? 
       Maalämpö on. Mikset tekisi investointia sekä kiinteistösi että maapallon tulevaisuuteen, ja vaihtaisi maalämpöön?</div>
 
-      <div class="chapter"> Miten maalämpö sitten toimii? Maahan porataan tavallisesti noin 100 - 200 metriä syvä reikä, johon upotetaan putki,
+      <div class="chapter" id="chap"> Miten maalämpö sitten toimii? Maahan porataan tavallisesti noin 100 - 200 metriä syvä reikä, johon upotetaan putki,
       jossa kiertää lämmönkeruuneste. Maaperä lämmittää nesteen, joka siirtyy lämpöpumppuun, jossa se kerätään käyttämällä ekologista
       lämpöpumpputekniikkaa talon lämpö- ja lämminvesijärjestelmään. Neste pumpataan takaisin kiertoputkeen lämpenemään uudestaan.</div>
 
@@ -83,24 +83,29 @@ function Footer() {
   )
 }
 
+const orgs = (
+  <div id="orgs">
+    <li><a href="https://www.sulpu.fi/">Sulpu</a></li>
+    <li><a href="https://www.thermia.fi/">Thermia</a></li>
+    <li><a href="https://gebwell.fi/">Gebwell</a></li>
+  </div>
+)
+
 const containerList = [
   {
     color: "#96FFD3",
-    img: "",
-    vid: "https://www.youtube.com/watch?v=alb0HQVpc4o",
+    title: "Käyttäjätarina",
     txt: "Tässä on haastis."
   },
   {
-    color:"#FFB494",
-    img: "https://www.scanoffice.fi/wp-content/uploads/sites/11/2019/07/Mitsubishi_Electric_Geodan_maalampopumppu_550x550.jpg",
-    vid: "",
+    color: "#FFB494",
+    title: "Kaikki pumpuista",
     txt: "Tässä nähdään maalämpöpumppu."
   },
   {
     color: "#96FFD3",
-    img: "",
-    vid: "",
-    txt: "Tähän laitetaan linkkejä."
+    title: "Alan toimijoita",
+    link: orgs
   }
 ]
 
@@ -108,19 +113,9 @@ function VerticalContainer(props) {
 
   const color = props.color
   const txt = props.txt
+  const title = props.title
+  const link = props.link
 
-  /* ei toimi
-  const img = props.img
-  const vid = props.vid
-  const giveVis = () => {
-    if (img !== "") {
-      return((<img style={{width: "100%", height: "width"}} src={img}></img>))
-    } else if (vid !== "") {
-      return((<video preload="auto" controls>
-        <source style={{width: "100%", height: "width", border: "none", outline: "none",}} src={vid}></source>
-      </video>))
-    }
-  } */
 
   return(
     <div style={{backgroundColor: color,
@@ -131,8 +126,9 @@ function VerticalContainer(props) {
                  boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)"
 
     }}>
-      {/*giveVis*/} 
+      <h1 style={{padding: "10px"}}>{title}</h1>
       <p style={{fontSize: "16px", padding: "10px"}}>{txt}</p>
+      {link}
     </div>
   )
 }
@@ -141,7 +137,18 @@ function ContainerSet() {
   return(
     <div id="verticals">
       {containerList.map((info) =>
-      (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} color={info.color} img={info.color} vid={info.vid} txt={info.txt}/>))}
+      (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} color={info.color} txt={info.txt} link={info.link}/>))}
+    </div>
+  )
+}
+
+function Calculator() {
+  return(
+    <div id="calc-container">
+      <h2>Kuinka paljon säästäisit maalämmön avulla?</h2>
+      <a id="btn" href="https://www.thermia.fi/maalampo/maalampo1/maalampo_saastot/">
+        <h3>Ota selvää!</h3>
+      </a>
     </div>
   )
 }
@@ -152,9 +159,11 @@ function App() {
       <Header />
       <Video />
       <div id="facts">
+        <h1>Mistä on kyse?</h1>
         <Bulletin />
       </div>
       <ContainerSet />
+      <Calculator />
       <Footer />
     </div>
   );

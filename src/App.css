@@ -109,6 +109,7 @@ h1 {
 
 #facts {
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   width: 85%;
@@ -117,10 +118,15 @@ h1 {
   padding: 15px;
   background-color: white;
   text-align: left;
-  max-width: 1000px;
+  max-width: 963px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border: solid 10px;
   border-color: #96FFD3;
+  line-height: 30px;
+}
+#facts h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .chapter {
@@ -132,6 +138,70 @@ h1 {
   height: 400px;
   display: flex;
   justify-content: space-evenly;
+}
+
+#orgs {
+  margin-top: -18px;
+  margin-left: 10px;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#orgs a:hover {
+  color: #FFB494;
+}
+
+
+#calc-container {
+  width: 60%;
+  height: 150px;
+  margin-top: 40px;
+  background-color: #337848;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#btn {
+  text-decoration: none;
+  text-align: center;
+  background-color: #96FFD3;
+  padding: 10px;
+  width: 200px; 
+  border-radius: 10px;
+  border: solid 2px;
+}
+
+h3 {
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+}
+
+#btn:hover {
+  border-color: #96FFD3;
+  background-color: #337848;
+  transition: 0.25s;
+  transition-delay: 0.1s;
+}
+
+#btn:hover h3 {
+  color: #96FFD3;
+  transition: 0.25s;
+  transition-delay: 0.1s;
+}
+
+#btn:visited {
+  color: black;
 }
 
 #footer {
@@ -152,3 +222,14 @@ h1 {
   margin-right: 50px;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
