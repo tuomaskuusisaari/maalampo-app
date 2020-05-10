@@ -45,9 +45,6 @@ h1 {
   font-family: 'Patua One', cursive;
   font-size: 25px;
   font-weight: 300;
-}
-
-#home {
   margin-left: 20px;
 }
 
@@ -145,6 +142,7 @@ h1 {
   margin-left: 10px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
 }
 
 #orgs a:hover {
