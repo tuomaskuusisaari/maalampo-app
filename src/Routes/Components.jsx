@@ -24,10 +24,11 @@ function Header(props) {
   function Video(props) {
 
     const source = props.src
+    const poster = props.poster
 
     return(
       <div id="video-container">
-        <video id="video" preload="auto" controls>
+        <video id="video" preload="auto" controls poster={poster}>
           <source src={source} type="video/mp4"></source>
         </video>
       </div>

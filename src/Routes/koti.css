@@ -184,7 +184,7 @@ h1 {
 #inter button:hover {
   font-size: 18px;
   color: #FFB494;
-  transition: 0.5s;
+  transition: 0.4s;
   transition-delay: 0.1s;
 }
 
@@ -211,16 +211,33 @@ h1 {
 #game-link {
   text-decoration: none;
   outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #96FFD3;
+  border: solid 2px;
+  border-color: black;
+}
+
+#game-link h5 {
+  font-family: "Patua One", "cursive";
+  font-size: 18px;
+}
+
+#game-link:hover {
+  border-color: #96FFD3;
+  background-color: #FFB494;
+  transition: 0.25s;
+  transition-delay: 0.1s;
+}
+
+#game-link:hover h5 {
+  color: #96FFD3;
+  transition: 0.25s;
+  transition-delay: 0.1s;
 }
 
 #game-link:visited {
   color: black;
-}
-
-#game div {
-  padding: 10px;
-  background-color: #96FFD3;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #calc-container {

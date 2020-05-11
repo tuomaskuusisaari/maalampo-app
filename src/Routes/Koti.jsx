@@ -7,6 +7,7 @@ import Tulevaisuus from "./Tulevaisuus";
 import Ympäristö from "./Ympäristö";
 import Logo from "../Pics/sulpu-logo.png"
 import Klogo from "../Pics/Frame 1 (1).jpg"
+import Poster from "../Pics/Näyttökuva (11).png"
 import { Header, Video, Footer, ContainerSet, Calculator } from "./Components"
 import "./koti.css"
 import { Link } from "react-router-dom"
@@ -95,7 +96,7 @@ const interview = (
 const game = (
   <div id="game">
     <p>Vaikka maalämpö uusiutuvana energiamuotona kasvattaa vain suosiotaan, niin kuitenkin maalämpöpumpuista tiedetään yllättävän vähän. Tämän takia haluamme tuoda maalämpöpumput tutuksi ihan tavallisellekkin kansalaiselle leikkimielisen maalämpöpumppu-muistipelin kautta!</p>
-    <Link id="game-link" to="/Game"><div>Pelaa!</div></Link>
+    <Link id="game-link" to="/Game"><h5>Pelaa!</h5></Link>
   </div>
 )
 
@@ -121,7 +122,7 @@ function MainPage() {
   return (
       <div id="main">
         <Header list={navList} title="#maaeilämpene" logo={Klogo} id="kampanja-logo"/>
-        <Video src={video}/>
+        <Video poster={Poster} src={video}/>
         <div id="facts">
           <h1>Mistä on kyse?</h1>
           <Bulletin />
