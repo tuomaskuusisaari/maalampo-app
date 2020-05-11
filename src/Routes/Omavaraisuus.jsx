@@ -1,17 +1,19 @@
 import React from "react"
 import "./omavaraisuus.css"
-import { Header, Footer } from "./Components"
+import { Header, Footer} from "./Components"
 import Taloudellisuus from "./Taloudellisuus"
 import Tulevaisuus from "./Tulevaisuus"
 import Ympäristö from "./Ympäristö"
-//import { MainPage } from "./Koti"
+import { MainPage } from "./Koti"
 import KLogo from "../Pics/Frame 1 (1).jpg"
+import Logo from "../Pics/sulpu-logo.png"
 
 const navList = [
-    //{
-      //name: "Koti",
-      //component: MainPage
-    //},
+    {
+      name: "",
+      text: "Koti",
+      component: MainPage
+    },
     {
       name: "Ympäristö",
       component: Ympäristö
@@ -30,6 +32,7 @@ export default function Omavaraisuus() {
     return(
         <div id="main">
             <Header list={navList} title="Omavaraisuus" logo={KLogo} id="kampanja-logo" />
+            <Footer logo={Logo} id="sulpu-logo"/>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom"
+import { Link } from "react-router-dom"
 import './koti.css'
 
 function Header(props) {
@@ -16,7 +16,7 @@ function Header(props) {
           <h1>{campaignName}</h1>
         </div>
         {linkList.map((link) =>
-        (<Link to={"/" + link.name}>{link.name}</Link>))}
+        (<Link to={"/" + link.name} key={link.name}>{link.name || link.text}</Link>))}
       </div>
     )
   }
@@ -56,7 +56,7 @@ function Header(props) {
   
   
     return(
-      <div style={{backgroundColor: color,
+      <div id="cont" style={{backgroundColor: color,
                    width: "30%" ,
                    height: "2 * width",
                    display: "flex",
@@ -65,7 +65,7 @@ function Header(props) {
   
       }}>
         <h1 style={{padding: "10px"}}>{title}</h1>
-        <p style={{fontSize: "16px", padding: "10px"}}>{txt}</p>
+        {txt}
         {link}
       </div>
     )
@@ -78,7 +78,7 @@ function Header(props) {
     return(
       <div id="verticals">
         {contentList.map((info) =>
-        (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} color={info.color} txt={info.txt} link={info.link}/>))}
+        (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} color={info.color} txt={info.txt} link={info.link} key={info.title}/>))}
       </div>
     )
   }

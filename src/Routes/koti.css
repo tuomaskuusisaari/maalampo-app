@@ -45,6 +45,9 @@ h1 {
   font-family: 'Patua One', cursive;
   font-size: 25px;
   font-weight: 300;
+}
+
+#header h1 {
   margin-left: 20px;
 }
 
@@ -55,6 +58,7 @@ h1 {
   font-size: 25px;
   color: black;
   border: none;
+  outline: none;
 }
 
 #header a:hover {
@@ -121,37 +125,107 @@ h1 {
   border-color: #96FFD3;
   line-height: 30px;
 }
+
 #facts h1 {
   text-align: center;
   margin-bottom: 10px;
+  margin-left: 0px;
 }
 
 .chapter {
   margin-top: 20px;
 }
 
+#cont h1 {
+  margin-left: 0px;
+}
+
 #verticals {
   width: 80%;
+  max-width: 963px;
   height: 400px;
   display: flex;
   justify-content: space-evenly;
 }
 
 #orgs {
-  margin-top: -18px;
   margin-left: 10px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   text-decoration: underline;
+  color: black;
+}
+
+#orgs a:visited {
+  color: black;
 }
 
 #orgs a:hover {
   color: #FFB494;
 }
 
+#inter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+#inter button {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#inter button:hover {
+  font-size: 18px;
+  color: #FFB494;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+
+#inter div {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background-color: #96FFD3;
+}
+
+#game {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+
+#game p {
+  line-height: 24px;
+}
+
+#game-link {
+  text-decoration: none;
+  outline: none;
+}
+
+#game-link:visited {
+  color: black;
+}
+
+#game div {
+  padding: 10px;
+  background-color: #96FFD3;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
 #calc-container {
   width: 60%;
+  max-width: 963px;
   height: 150px;
   margin-top: 40px;
   background-color: #337848;
@@ -222,12 +296,5 @@ h3 {
 
 li {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: black;
+  margin: 1.5em 0;
 }
