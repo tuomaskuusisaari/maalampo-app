@@ -7,15 +7,20 @@ import KLogo from "../Pics/Frame 1 (1).jpg"
 import Logo from "../Pics/sulpu-logo.png"
 import Foot from "../Pics/Carbon_footprint_icon.png"
 import Pump from "../Pics/vector 3.png"
+import Home from "../Pics/home.png"
+import Eco from "../Pics/education.png"
+import Ig from "../Pics/instagram.png"
 
 const navList = [
     {
       name: "",
       text: "Koti",
+      pic: Home,
       component: MainPage
     },
     {
       name: "Taloudellisuus & Omavaraisuus",
+      pic: Eco,
       component: Taloudellisuus
     }
   ]
@@ -74,7 +79,7 @@ export default function Ympäristö() {
               <SideBySide color="#99651C" title="Otsikko" txt={textList} img={Pump} />
               <ContainerSet list={conList} />
             </div>
-            <Footer logo={Logo} id="sulpu-logo"/>
+            <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link2="https://www.instagram.com/maaeilampene/"/>
         </div>
     )
 }

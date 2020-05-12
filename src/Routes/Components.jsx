@@ -8,6 +8,8 @@ function Header(props) {
     const campaignName = props.title
     const campaignLogo = props.logo
     const id = props.id
+    const options =linkList.map((link) =>
+    (<Link to={"/" + link.name} key={link.name}><img id="link-img" src={link.pic} alt={link.name || link.txt}/><div id="link-text">{link.name || link.text}</div></Link>))
 
     return(
       <div id="header">
@@ -15,11 +17,11 @@ function Header(props) {
           <img id={id} src={campaignLogo} alt={id} />
           <h1>{campaignName}</h1>
         </div>
-        {linkList.map((link) =>
-        (<Link to={"/" + link.name} key={link.name}>{link.name || link.text}</Link>))}
+        {options}
       </div>
     )
   }
+
 
   function SideBySide(props) {
 
@@ -32,7 +34,7 @@ function Header(props) {
       <div id="upper">
         <div style={{backgroundColor: color}}>
           <h1>{title}</h1>
-          {txt.map((chapter) => (<p key={chapter.index}>{chapter}</p>))}
+          {txt.map((chapter) => (<p key={title}>{chapter}</p>))}
         </div>
         <img src={img} alt={title}/>
       </div>
@@ -57,10 +59,14 @@ function Header(props) {
 
     const footerLogo = props.logo
     const text = props.id
+    const href = props.link
+    const href2 = props.link2
+    const mediaLogo = props.social
 
     return(
       <footer id="footer">
-        <img id={text} src={footerLogo} alt={text}></img>
+        <a href={href2}><img id={text} src={mediaLogo} alt="social-media" /></a>
+        <a href={href}><img id={text} src={footerLogo} alt={text}></img></a>
       </footer>
     )
   }
@@ -75,14 +81,8 @@ function Header(props) {
   
   
     return(
-      <div id="cont" style={{backgroundColor: color,
-                   width: "30%" ,
-                   display: "flex",
-                   flexDirection: "column",
-                   boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)"
-  
-      }}>
-        <h1 style={{padding: "10px"}}>{title}</h1>
+      <div id="cont" style={{backgroundColor: color}}>
+        <h1>{title}</h1>
         {txt}
         {link}
       </div>

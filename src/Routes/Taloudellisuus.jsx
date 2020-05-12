@@ -8,15 +8,20 @@ import Logo from "../Pics/sulpu-logo.png"
 import Oma from "../Pics/omavara.png"
 import Invest from "../Pics/investment.png"
 import Check from "../Pics/interface.png"
+import Home from "../Pics/home.png"
+import Envi from "../Pics/arrows.png"
+import Ig from "../Pics/instagram.png"
 
 const navList = [
     {
       name: "",
       text: "Koti",
+      pic: Home,
       component: MainPage
     },
     {
       name: "Ympäristö & Tulevaisuus",
+      pic: Envi,
       component: Ympäristö
     }
   ]
@@ -83,7 +88,7 @@ export default function Taloudellisuus() {
               <SideBySide color="#99651C" title="Otsikko" txt={textList} img={Oma} />
               <ContainerSet list={conList} />
             </div>
-            <Footer logo={Logo} id="sulpu-logo"/>
+            <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link2="https://www.instagram.com/maaeilampene/"/>
         </div>
     )
 }

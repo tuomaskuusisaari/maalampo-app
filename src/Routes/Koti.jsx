@@ -9,14 +9,19 @@ import Poster from "../Pics/Näyttökuva (11).png"
 import { Header, Video, Footer, ContainerSet, Calculator } from "./Components"
 import "./koti.css"
 import { Link } from "react-router-dom"
+import Envi from "../Pics/arrows.png"
+import Eco from "../Pics/education.png"
+import Ig from "../Pics/instagram.png"
 
 const navList = [
   {
     name: "Ympäristö & Tulevaisuus",
+    pic: Envi,
     component: Ympäristö
   },
   {
     name: "Taloudellisuus & Omavaraisuus",
+    pic: Eco,
     component: Taloudellisuus
   }
 ]
@@ -113,7 +118,7 @@ function MainPage() {
         </div>
         <ContainerSet list={containerList}/>
         <Calculator link={calcLink} top="Kuinka paljon säästäisit maalämmöllä?" bottom="Ota selvää!"/>
-        <Footer logo={Logo} id="sulpu-logo"/>
+        <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link="https://www.instagram.com/maaeilampene/"/>
       </div>
   );
 }
