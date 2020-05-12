@@ -12,11 +12,29 @@ function Header(props) {
     return(
       <div id="header">
         <div id="logo-container">
-          <img id={id} src={campaignLogo} alt={id}></img>
+          <img id={id} src={campaignLogo} alt={id} />
           <h1>{campaignName}</h1>
         </div>
         {linkList.map((link) =>
         (<Link to={"/" + link.name} key={link.name}>{link.name || link.text}</Link>))}
+      </div>
+    )
+  }
+
+  function SideBySide(props) {
+
+    const img = props.img
+    const title = props.title
+    const txt = props.txt
+    const color = props.color
+
+    return(
+      <div id="upper">
+        <div style={{backgroundColor: color}}>
+          <h1>{title}</h1>
+          <p>{txt}</p>
+        </div>
+        <img src={img} alt={title}/>
       </div>
     )
   }
@@ -54,12 +72,13 @@ function Header(props) {
     const txt = props.txt
     const title = props.title
     const link = props.link
+    const hi = props.height
   
   
     return(
       <div id="cont" style={{backgroundColor: color,
                    width: "30%" ,
-                   height: "2 * width",
+                   height: hi,
                    display: "flex",
                    flexDirection: "column",
                    boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)"
@@ -79,7 +98,7 @@ function Header(props) {
     return(
       <div id="verticals">
         {contentList.map((info) =>
-        (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} color={info.color} txt={info.txt} link={info.link} key={info.title}/>))}
+        (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} height={info.height} color={info.color} txt={info.txt} link={info.link} key={info.title}/>))}
       </div>
     )
   }
@@ -105,5 +124,6 @@ export {
     Video,
     Footer,
     ContainerSet,
-    Calculator
+    Calculator,
+    SideBySide
 }

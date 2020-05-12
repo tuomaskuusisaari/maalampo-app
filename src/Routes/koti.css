@@ -90,6 +90,44 @@ h1 {
   color: black;
 }
 
+#upper {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+#upper div {
+  width: 45%;
+  height: width;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+#upper h1 {
+  padding: 10px;
+  font-family: "Patua One", "cursive";
+  font-size: 25px;
+  margin: 0 0 0 0;
+}
+
+#upper p {
+  padding: 10px;
+  line-height: 24px;
+}
+
+#upper img {
+  width: 45%;
+  height: width;
+}
+
 #video {
   width: 73%;
   height: width * 9/16;
@@ -119,7 +157,7 @@ h1 {
   padding: 15px;
   background-color: white;
   text-align: left;
-  max-width: 963px;
+  max-width: 985px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border: solid 10px;
   border-color: #96FFD3;
@@ -142,8 +180,7 @@ h1 {
 
 #verticals {
   width: 80%;
-  max-width: 963px;
-  height: 400px;
+  max-width: 985px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -242,7 +279,7 @@ h1 {
 
 #calc-container {
   width: 60%;
-  max-width: 963px;
+  max-width: 985px;
   height: 150px;
   margin-top: 40px;
   background-color: #337848;
