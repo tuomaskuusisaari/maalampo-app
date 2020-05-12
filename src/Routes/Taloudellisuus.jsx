@@ -31,7 +31,7 @@ const box1 = (
   <div id="box11">
     <p>“...asun paritalossa, jossa öljylämmitys vaihdettiin vuonna 2008 maalämpöön. Investointi maksoi itsensä takaisin noin viidessä vuodessa vähentyneinä kuluina, järjestelmän odotettu käyttöikä on noin 20 vuotta, eli 15 vuotta pelkkää säästöä.”</p>
     <a href="https://www.hs.fi/paivanlehti/01102019/art-2000006256513.html">Lue lisää</a>
-    <img id="inv" src={Invest}/>
+    <img id="inv" src={Invest} alt="investment"/>
   </div>
 )
 
@@ -44,7 +44,7 @@ const box2 = (
     <li>takaisinmaksuaika: 10 vuotta</li>
     <li>käyttöikä 25–30 vuotta</li>
     <a href="https://www.hs.fi/koti/art-2000006307444.html">Lue lisää</a>
-    <img id="check" src={Check}/>
+    <img id="check" src={Check} alt="check-board"/>
   </div>
 )
 
