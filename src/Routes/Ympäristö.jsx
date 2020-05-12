@@ -38,7 +38,7 @@ const navList = [
       <p>Suomalaisen hiilijalanjälki on keskimäärin yli 10 000 kg CO2e vuodessa ja siitä noin kolmannes aiheutuu asumisen päästöistä. Tiedätkö, mikä sinun hiilijalanjälkesi on? Täällä voit laskea hiilijalanjälkesi, ja näet myös eroteltuna eri osa-alueiden aiheuttamat päästöt.</p>
       <a id="bt" href="https://elamantapatesti.sitra.fi/">Laskuriin</a>
       <p>Onko asumisen hiilijalanjälkesi korkea? Voit pienentää sitä esimerkiksi vaihtamalla maalämpöön!</p>
-      <img id="foot" src={Foot} />
+      <img id="foot" src={Foot} alt="carbon-footprint"/>
     </div>
   )
 
@@ -61,14 +61,17 @@ const navList = [
   ]
 
 
-const mainText = "Maalämpö on miljardien vuosien ajan maaperään sitoutunutta auringon säteilyä, joka vain odottaa käyttöönottoa! Kyse on siis uusiutuvasta energianlähteestä, jonka tuottaminen ei kuormita luontoa. Mitä vielä, maalämpöä löytyy runsaasti meillä Suomessakin, joten lämmönsiirtoon liittyvät haitat ovat olemattomat. Valitsemalla maalämmön sijoitat tulevaan! Huipputekninen koneisto takaa kestävän ja jatkuvan energiansaannin pitkälle seuraaville polville, ja toimii siten pätevänä myyntivalttina kotia vaihtaessa. Säästät myös luontoa - maalämpö on vihreä valinta, joka varmistaa rakastamamme suomalaisen luonnon säilymisen."
+const textList = [
+  "Maalämpö on miljardien vuosien ajan maaperään sitoutunutta auringon säteilyä, joka vain odottaa käyttöönottoa! Kyse on siis uusiutuvasta energianlähteestä, jonka tuottaminen ei kuormita luontoa. Mitä vielä, maalämpöä löytyy runsaasti meillä Suomessakin, joten lämmönsiirtoon liittyvät haitat ovat olemattomat.",
+  "Valitsemalla maalämmön sijoitat tulevaan! Huipputekninen koneisto takaa kestävän ja jatkuvan energiansaannin pitkälle seuraaville polville, ja toimii siten pätevänä myyntivalttina kotia vaihtaessa. Säästät myös luontoa - maalämpö on vihreä valinta, joka varmistaa rakastamamme suomalaisen luonnon säilymisen."
+]
 
 export default function Ympäristö() {
     return(
         <div id="main">
             <Header list={navList} title="Ympäristö & Tulevaisuus" logo={KLogo} id="kampanja-logo" />
             <div id="content">
-              <SideBySide color="#99651C" title="Otsikko" txt={mainText} img={Pump} />
+              <SideBySide color="#99651C" title="Otsikko" txt={textList} img={Pump} />
               <ContainerSet list={conList} />
             </div>
             <Footer logo={Logo} id="sulpu-logo"/>

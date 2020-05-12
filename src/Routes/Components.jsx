@@ -32,7 +32,7 @@ function Header(props) {
       <div id="upper">
         <div style={{backgroundColor: color}}>
           <h1>{title}</h1>
-          <p>{txt}</p>
+          {txt.map((chapter) => (<p key={chapter.index}>{chapter}</p>))}
         </div>
         <img src={img} alt={title}/>
       </div>
@@ -72,13 +72,11 @@ function Header(props) {
     const txt = props.txt
     const title = props.title
     const link = props.link
-    const hi = props.height
   
   
     return(
       <div id="cont" style={{backgroundColor: color,
                    width: "30%" ,
-                   height: hi,
                    display: "flex",
                    flexDirection: "column",
                    boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)"
@@ -98,7 +96,7 @@ function Header(props) {
     return(
       <div id="verticals">
         {contentList.map((info) =>
-        (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} height={info.height} color={info.color} txt={info.txt} link={info.link} key={info.title}/>))}
+        (<VerticalContainer style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}} title={info.title} color={info.color} txt={info.txt} link={info.link} key={info.title}/>))}
       </div>
     )
   }
