@@ -12,6 +12,8 @@ import Home from "../Pics/home.png"
 import Envi from "../Pics/arrows.png"
 import Ig from "../Pics/instagram.png"
 
+
+//Constructors for navbar elements
 const navList = [
     {
       name: "",
@@ -26,16 +28,12 @@ const navList = [
     }
   ]
 
-const textList = [ 
-  "Kertasijoittamalla maalämpöön takaat pitkäaikaisen omavaraisuuden talvella lämmön suhteen, ja kesällä viilennyksen suhteen. Oma lämmitysjärjestelmä ei myöskään ole riippuvainen muun maailman energiatilanteesta. Laadukas eurooppalainen laitteisto varmistaa sen, että järjestelmän huoltotarve pysyy minimissä. Me kampanjoimme maalämmön puolesta, sillä uskomme vastuunkannon ja pitkäjänteisyyden voimaan.",
-  "Voimme yhdessä taata energiariippumattoman Suomen tulevillekin polville panostamalla maalämpöön. Liity joukkoomme ja osoita tukesi paremman huomisen sekä kotimaisen huipputeknologian ja osaamisen puolesta! Valitse maalämpö, niin maa ei lämpene. Voit myös kertoa omista kokemuksistasi ja toiveistasi maalämmön suhteen käyttämällä tunnistetta #maaeilämpene",
-  "Maalämpöön siirtymisen hyödyt näkyvät suurimmin yhteisöissä, joissa suurehko kertasijoitus voidaan jakaa osiin ja kaikille taataan varma ja vakaa energialähde pitkälle tulevaisuuteen. Maalämmöllä yhteisö voi itse varmistaa energiansaantinsa, toisin kuin luottamalla kaukaiseen ja tuntemattomaan energialaitokseen."
-]
 
+//Content shown in the small content boxes
 const box1 = (
   <div id="box11">
     <p>“...asun paritalossa, jossa öljylämmitys vaihdettiin vuonna 2008 maalämpöön. Investointi maksoi itsensä takaisin noin viidessä vuodessa vähentyneinä kuluina, järjestelmän odotettu käyttöikä on noin 20 vuotta, eli 15 vuotta pelkkää säästöä.”</p>
-    <a href="https://www.hs.fi/paivanlehti/01102019/art-2000006256513.html" target="_blank">HS 1.10.2019</a>
+    <a href="https://www.hs.fi/paivanlehti/01102019/art-2000006256513.html" >HS 1.10.2019</a>
     <img id="inv" src={Invest} alt="investment"/>
   </div>
 )
@@ -48,7 +46,7 @@ const box2 = (
     <li>säästö: 30 000 e/vuosi</li>
     <li>takaisinmaksuaika: 10 vuotta</li>
     <li>käyttöikä 25–30 vuotta</li>
-    <a href="https://www.hs.fi/koti/art-2000006307444.html" target="_blank">HS 14.11.2019</a>
+    <a href="https://www.hs.fi/koti/art-2000006307444.html" >HS 14.11.2019</a>
     <img id="check" src={Check} alt="check-board"/>
   </div>
 )
@@ -58,10 +56,20 @@ const box3 = (
     <p>“Raisiossa sijaitseva kolmen kerrostalon Asunto-osakeyhtiö Sorolaisenmäki on energiatehokkuuden mallikansalainen. Vajaa neljä vuotta sitten tehty putki- ja energiatehokkuusremontin yhdistelmä on säästänyt asukkaiden rahoja jo yli 150 000 euron edestä.”</p>
     <p>“Yhtiö teki yli neljä vuotta sitten päätöksen irtautua kaukolämmöstä, sillä asukkaat halusivat siirtyä maalämpöön. Se oli Raisiossa ennakkoluulotonta ja ennenkuulumatonta. Samalla päätettiin ottaa käyttöön asuntojen ilmanvaihdon poistoilman lämpö, joka aiemmin meni harakoille. Se onnistui lämmöntalteenottojärjestelmän avulla."</p>
     <p>"Mäen mukaan yhtiössä oltiin muiden mielestä jopa hullunrohkeita, sillä kukaan naapuriyhtiöistä ei uskaltanut aloittaa vastaavaa hanketta. Onnistuneiden kokemusten myötä naapuritkin ovat sittemmin uusineet lämmitysjärjestelmänsä.“</p>
-    <a href="https://www.hs.fi/koti/art-2000006451006.html" target="_blank">HS 26.3.2020</a>
+    <a href="https://www.hs.fi/koti/art-2000006451006.html" >HS 26.3.2020</a>
   </div>
 )
 
+
+//Constructors for content boxes
+const textList = [ 
+  "Kertasijoittamalla maalämpöön takaat pitkäaikaisen omavaraisuuden talvella lämmön suhteen, ja kesällä viilennyksen suhteen. Oma lämmitysjärjestelmä ei myöskään ole riippuvainen muun maailman energiatilanteesta. Laadukas eurooppalainen laitteisto varmistaa sen, että järjestelmän huoltotarve pysyy minimissä. Me kampanjoimme maalämmön puolesta, sillä uskomme vastuunkannon ja pitkäjänteisyyden voimaan.",
+  "Voimme yhdessä taata energiariippumattoman Suomen tulevillekin polville panostamalla maalämpöön. Liity joukkoomme ja osoita tukesi paremman huomisen sekä kotimaisen huipputeknologian ja osaamisen puolesta! Valitse maalämpö, niin maa ei lämpene. Voit myös kertoa omista kokemuksistasi ja toiveistasi maalämmön suhteen käyttämällä tunnistetta #maaeilämpene",
+  "Maalämpöön siirtymisen hyödyt näkyvät suurimmin yhteisöissä, joissa suurehko kertasijoitus voidaan jakaa osiin ja kaikille taataan varma ja vakaa energialähde pitkälle tulevaisuuteen. Maalämmöllä yhteisö voi itse varmistaa energiansaantinsa, toisin kuin luottamalla kaukaiseen ja tuntemattomaan energialaitokseen."
+]
+
+
+//Constructors for content boxes
 const conList = [
   {
     color: "#FFB494",

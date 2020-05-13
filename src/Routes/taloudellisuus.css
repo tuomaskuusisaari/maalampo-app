@@ -1,3 +1,6 @@
+
+/* General */
+
 * {
     margin: none;
 }
@@ -24,6 +27,8 @@
   a:hover {
     color: #96FFD3;
   }
+
+/* Styling for content boxes */
 
   #content{
     display: flex;

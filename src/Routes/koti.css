@@ -1,3 +1,7 @@
+/* Styling for Koti.jsx and Components.jsx */
+
+/* General */
+
 * {
   margin: 0;
 }
@@ -11,6 +15,29 @@
 p {
   font-family: "Montserrat", sans-serif;
 }
+
+h1 {
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+/* Components: Header */
 
 #header {
   display: flex;
@@ -39,12 +66,6 @@ p {
 #kampanja-logo {
   height: 35px;
   width: 35px;
-}
-
-h1 {
-  font-family: 'Patua One', cursive;
-  font-size: 25px;
-  font-weight: 300;
 }
 
 #header h1 {
@@ -94,6 +115,8 @@ h1 {
   display: none;
 }
 
+/* Components: SideBySide */
+
 #upper {
   width: 80%;
   display: flex;
@@ -133,6 +156,8 @@ h1 {
   height: width;
 }
 
+/* Components: Video */
+
 #video {
   width: 73%;
   height: width * 9/16;
@@ -150,6 +175,8 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+/* Koti: Bulletin */
 
 #facts {
   font-family: "Montserrat", sans-serif;
@@ -179,6 +206,8 @@ h1 {
   margin-top: 20px;
 }
 
+/* Coponents: VerticalContainer & ContainerSet */
+
 #cont {
   width: 30%;
   display: flex;
@@ -197,6 +226,8 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* Koti: Constructors */
 
 #orgs {
   margin-left: 10px;
@@ -290,6 +321,8 @@ h1 {
   color: black;
 }
 
+/* Components: Calculator */
+
 #calc-container {
   width: 60%;
   max-width: 985px;
@@ -306,12 +339,6 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-}
-
 #btn {
   text-decoration: none;
   text-align: center;
@@ -320,11 +347,6 @@ h2 {
   width: 200px; 
   border-radius: 10px;
   border: solid 2px;
-}
-
-h3 {
-  font-family: 'Patua One', cursive;
-  font-size: 25px;
 }
 
 #btn:hover {
@@ -344,6 +366,8 @@ h3 {
   color: black;
 }
 
+/* Components: Footer */
+
 #footer {
   width: 100%;
   height: 100px;
@@ -356,14 +380,14 @@ h3 {
   background-color: #99651C;
 }
 
+#footer div {
+  margin-right: 50px;
+}
+
 #sulpu-logo {
   height: 50px;
   width: 50px;
   margin-right: 50px;
-}
-
-li {
-  list-style: none;
 }
 
 /* Responsiveness */
@@ -375,7 +399,7 @@ li {
   }
 
   #upper div {
-    width: 80%;
+    width: 90%;
   }
 
   #upper img {
@@ -437,6 +461,10 @@ li {
 }
 
 @media only screen and (max-width: 460px) {
+
+  #inter div {
+    font-size: 10px;
+  }
 
   #cont {
     width: 95%;

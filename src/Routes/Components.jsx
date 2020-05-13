@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 import './koti.css'
+import { LikeButton } from "./Like/LikeButton.js"
 
+//Customizable header, uses list of links to map the navigation system with routing.
+//You can also choose the page title, page logo, and id for styling the logo
 function Header(props) {
 
     const linkList = props.list
@@ -23,6 +26,8 @@ function Header(props) {
   }
 
 
+  //Customizable component where there is a text box on the left and a image on the right.
+  //You can choose your own image, text title, text, and text box color.
   function SideBySide(props) {
 
     const img = props.img
@@ -41,6 +46,7 @@ function Header(props) {
     )
   }
   
+  //Custom component for video player, you can choose your own video and tumbnail.
   function Video(props) {
 
     const source = props.src
@@ -55,6 +61,9 @@ function Header(props) {
     )
   }
   
+
+  //Custom footer component. You can choose two of your own images with links
+  //and also the id for the images.
   function Footer(props) {
 
     const footerLogo = props.logo
@@ -65,13 +74,16 @@ function Header(props) {
 
     return(
       <footer id="footer">
-        <a href={href2}><img id={text} src={mediaLogo} alt="social-media" target="_blank"/></a>
-        <a href={href}><img id={text} src={footerLogo} alt={text} target="_blank"/></a>
+        <a href={href2}><img id={text} src={mediaLogo} alt="social-media" /></a>
+        <a href={href}><img id={text} src={footerLogo} alt={text} /></a>
+        <LikeButton/>
       </footer>
     )
   }
   
   
+  //Content box that is larger in vertical than in horizontal, you can choose your own
+  //background color, content, title and links.
   function VerticalContainer(props) {
   
     const color = props.color
@@ -89,6 +101,8 @@ function Header(props) {
     )
   }
   
+
+  //Combining 3 Vertical container together to form a content module.
   function ContainerSet(props) {
 
     const contentList = props.list
@@ -101,6 +115,8 @@ function Header(props) {
     )
   }
   
+  //Custom content box with button, you can choose your own title, button text and link.
+  //At the moment used only by MainPage.
   function Calculator(props) {
 
     const topText = props.top

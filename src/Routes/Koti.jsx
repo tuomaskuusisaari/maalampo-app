@@ -13,6 +13,8 @@ import Envi from "../Pics/arrows.png"
 import Eco from "../Pics/education.png"
 import Ig from "../Pics/instagram.png"
 
+
+//Constructors for navbar elements
 const navList = [
   {
     name: "Ympäristö ja Tulevaisuus",
@@ -26,9 +28,14 @@ const navList = [
   }
 ]
 
+//Link for video and the calculator
 const video = "https://tuomaskuusisaari.github.io/vjpvideo/vjpvideo.mp4"
 const calcLink = "https://www.thermia.fi/maalampo/maalampo1/maalampo_saastot/"
 
+
+//Component for the main info box, using the react-show-more-text library.
+//It's first showing only certain amount of rows of text, and when clicked
+//reveals more. Unique to MainPage, so that's why it's defined here. 
 function Bulletin() {
   return(
     <ShowMoreText
@@ -51,6 +58,7 @@ function Bulletin() {
   )
 }
 
+//Links for one of the content boxes
 const orgs = (
   <div id="orgs">
     <li><a href="https://www.sulpu.fi/">Sulpu</a></li>
@@ -62,19 +70,23 @@ const orgs = (
   </div>
 )
 
+
+//Popup style component for one of the content boxes. Is usinf the reactjs-popup library.
+//When clicked, the piece of text reveals the whole interview in a popup window.
+//Unique to MainPage, so that's why it's defined here. 
 const interview = (
   <div id="inter">
-    <Popup trigger={<button>"...sijoitus talomme arvoon ja taattuun lämpöön ympäri vuoden."</button>} modal  closeOnDocumentClick>
+    <Popup position="center center" trigger={<button>"...sijoitus talomme arvoon ja taattuun lämpöön ympäri vuoden."</button>} modal  closeOnDocumentClick>
       <div>
         ”Rakennuttaessamme omakotitaloa asensimme samalla maalämpöpumpun. Tällöin asennuksista ja porauksista ei ollut haittaa maisemalle, eikä työmaan toimintakaan hidastunut parin päivän asennuksen aikana. Mahdollisimman aikainen sijoitus maalämpöön takaa myös nopeamman takaisinmaksuajan, sekä on sijoitus talomme arvoon ja taattuun lämpöön ympäri vuoden.”
       </div>
     </Popup>
-    <Popup trigger={<button>"...totesimme maalämmön edullisimmaksi ympäristöystävälliseksi vaihtoehdoksi..."</button>} modal  closeOnDocumentClick>
+    <Popup position="center center" trigger={<button>"...totesimme maalämmön edullisimmaksi ympäristöystävälliseksi vaihtoehdoksi..."</button>} modal  closeOnDocumentClick>
       <div>
         ”Olimme naapurimme kanssa pitkään ihmetelleet kalliita lämmitysmaksuja. Vertailimme erilaisia lämmitysvaihtoehtoja ja totesimme maalämmön edullisimmaksi ympäristöystävälliseksi vaihtoehdoksi. Alkusijoitus olisi kuitenkin suuri ja asentaminen olisi haitaksi pihallemme. Oli lopputalvi joten päätimme ottaa pihojen remontoinnin kevään projektiksi ja yhdessä tehty taloudellinen sijoitus ei tuntunut loppujen lopuksi niin pelottavalta."
       </div>
     </Popup>
-    <Popup trigger={<button>"...ja asukkaatkin ovat innostuneet kauniin maiseman korostamisesta.”</button>} modal  closeOnDocumentClick>
+    <Popup position="center center" trigger={<button>"...ja asukkaatkin ovat innostuneet kauniin maiseman korostamisesta.”</button>} modal  closeOnDocumentClick>
       <div>
       ”Kuulin, että taloyhtiöömme asennetaan maalämpöpumppu. Ensin olin huolissani melusta ja maiseman tuhoutumisesta. Kaikki melua aiheuttavat toimenpiteet hoidettiin kuitenkin päivän kiiresimpinä aikoina, eivätkä poraukset häirinneet arkielämää. Asennus hoidettiin yllättävän tehokkaasti ja pihan korjaustyöt aloitettiin välittömästi. Nyt piha kukoistaa entistä vehreämpänä ja asukkaatkin ovat innostuneet kauniin maiseman korostamisesta.”
       </div>
@@ -82,6 +94,7 @@ const interview = (
   </div>
 )
 
+//Component for one of the content boxes
 const game = (
   <div id="game">
     <p>Vaikka maalämpö uusiutuvana energiamuotona kasvattaa vain suosiotaan, niin kuitenkin maalämpöpumpuista tiedetään yllättävän vähän. Tämän takia haluamme tuoda maalämpöpumput tutuksi ihan tavallisellekkin kansalaiselle leikkimielisen maalämpöpumppu-muistipelin kautta!</p>
@@ -89,6 +102,8 @@ const game = (
   </div>
 )
 
+
+//Constructors for content boxes
 const containerList = [
   {
     color: "#96FFD3",

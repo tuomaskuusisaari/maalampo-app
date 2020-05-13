@@ -3,6 +3,7 @@ import './Game.css';
 import CardView from './CardView';
 import MemoryCards from './MemoryCards';
 
+//Game built following a tutorial by Lars Bergqvist (GitHub: LarsBergqvist)
 
 class Game extends Component {
     state = {};
