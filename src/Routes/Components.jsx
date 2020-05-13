@@ -65,8 +65,8 @@ function Header(props) {
 
     return(
       <footer id="footer">
-        <a href={href2}><img id={text} src={mediaLogo} alt="social-media" /></a>
-        <a href={href}><img id={text} src={footerLogo} alt={text}></img></a>
+        <a href={href2}><img id={text} src={mediaLogo} alt="social-media" target="_blank"/></a>
+        <a href={href}><img id={text} src={footerLogo} alt={text} target="_blank"/></a>
       </footer>
     )
   }

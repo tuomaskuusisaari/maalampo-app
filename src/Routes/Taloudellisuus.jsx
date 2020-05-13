@@ -20,7 +20,7 @@ const navList = [
       component: MainPage
     },
     {
-      name: "Ympäristö & Tulevaisuus",
+      name: "Ympäristö ja Tulevaisuus",
       pic: Envi,
       component: Ympäristö
     }
@@ -83,7 +83,7 @@ const conList = [
 export default function Taloudellisuus() {
     return(
         <div id="main">
-            <Header list={navList} title="Taloudellisuus & Omavaraisuus" logo={KLogo} id="kampanja-logo" />
+            <Header list={navList} title="Taloudellisuus ja Omavaraisuus" logo={KLogo} id="kampanja-logo" />
             <div id="content">
               <SideBySide color="#99651C" title="Otsikko" txt={textList} img={Oma} />
               <ContainerSet list={conList} />

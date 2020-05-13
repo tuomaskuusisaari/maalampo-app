@@ -15,12 +15,12 @@ import Ig from "../Pics/instagram.png"
 
 const navList = [
   {
-    name: "Ympäristö & Tulevaisuus",
+    name: "Ympäristö ja Tulevaisuus",
     pic: Envi,
     component: Ympäristö
   },
   {
-    name: "Taloudellisuus & Omavaraisuus",
+    name: "Taloudellisuus ja Omavaraisuus",
     pic: Eco,
     component: Taloudellisuus
   }
@@ -118,7 +118,7 @@ function MainPage() {
         </div>
         <ContainerSet list={containerList}/>
         <Calculator link={calcLink} top="Kuinka paljon säästäisit maalämmöllä?" bottom="Ota selvää!"/>
-        <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link="https://www.instagram.com/maaeilampene/"/>
+        <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link2="https://www.instagram.com/maaeilampene/"/>
       </div>
   );
 }

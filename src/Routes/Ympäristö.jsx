@@ -19,7 +19,7 @@ const navList = [
       component: MainPage
     },
     {
-      name: "Taloudellisuus & Omavaraisuus",
+      name: "Taloudellisuus ja Omavaraisuus",
       pic: Eco,
       component: Taloudellisuus
     }
@@ -27,7 +27,7 @@ const navList = [
 
   const box1 = (
   <div id="box1">
-    <p>Suomessa kotitalouksissa kulutetusta energiasta jopa puolet kuluu lämmitykseen ja lämmitys on näin keskeinen ilmastovaikutuksen aiheuttaja. Maalämpö on erittäin ympäristöystävällinen valinta, ja se onkin <a href="https://tulevaisuudenrakentaminen.samk.fi/2019/05/31/pientalon-lammityksen-hiilijalanjalki/">tutkitusti</a> vähäpäästöisin lämmitysmuoto esimerkiksi pientaloissa. Kotitalouden lämmitysenergian tarve on keskimäärin 19 450 kWh vuodessa ja tämä aiheuttaa keskimäärin 3626 kg CO2e päästöt. Maalämpöpumpun asentaminen taas vähentää päästöjä sähkölämmitykseen verrattuna keskimäärin noin 1360 kg CO2-e vuodessa, ja vaikutukset ovat vielä suuremmat jos lämmitykseen käytetään esimerkiksi kaukolämpöä.</p>
+    <p>Suomessa kotitalouksissa kulutetusta energiasta jopa puolet kuluu lämmitykseen ja lämmitys on näin keskeinen ilmastovaikutuksen aiheuttaja. Maalämpö on erittäin ympäristöystävällinen valinta, ja se onkin <a href="https://tulevaisuudenrakentaminen.samk.fi/2019/05/31/pientalon-lammityksen-hiilijalanjalki/" target="_blank">tutkitusti</a> vähäpäästöisin lämmitysmuoto esimerkiksi pientaloissa. Kotitalouden lämmitysenergian tarve on keskimäärin 19 450 kWh vuodessa ja tämä aiheuttaa keskimäärin 3626 kg CO2e päästöt. Maalämpöpumpun asentaminen taas vähentää päästöjä sähkölämmitykseen verrattuna keskimäärin noin 1360 kg CO2-e vuodessa, ja vaikutukset ovat vielä suuremmat jos lämmitykseen käytetään esimerkiksi kaukolämpöä.</p>
   </div>)
 
   const box2 = (
@@ -74,7 +74,7 @@ const textList = [
 export default function Ympäristö() {
     return(
         <div id="main">
-            <Header list={navList} title="Ympäristö & Tulevaisuus" logo={KLogo} id="kampanja-logo" />
+            <Header list={navList} title="Ympäristö ja Tulevaisuus" logo={KLogo} id="kampanja-logo" />
             <div id="content">
               <SideBySide color="#99651C" title="Miksi maalämpö?" txt={textList} img={Pump} />
               <ContainerSet list={conList} />
