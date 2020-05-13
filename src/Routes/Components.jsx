@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 import './koti.css'
+import history from "../history"
 
 function Header(props) {
 
@@ -18,6 +19,7 @@ function Header(props) {
           <h1>{campaignName}</h1>
         </div>
         {options}
+        {history.push("/")}
       </div>
     )
   }
