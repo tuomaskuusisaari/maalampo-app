@@ -1,12 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
+import { createBrowserHistory } from "history"
 import { MainPage, navList } from "../src/Routes/Koti"
 import NotFoundPage from "../src/Routes/404"
 import GameApp from "../src/Game/GameApp.js"
 
+const history = createBrowserHistory();
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter history={history} >
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/404" component={NotFoundPage} />
