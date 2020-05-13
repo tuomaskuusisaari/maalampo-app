@@ -34,14 +34,14 @@ const navList = [
     <div id="box2">
       <p>Kiinteistösijoittaja Varma aikoo puolittaa vuokratalojensa päästöt energiaremontilla, jossa kaukolämpö vaihdetaan lämpöpumppuihin ja maalämpöön. Varma laskee, että sen neljästäkymmenestä vuokratalosta säästyvät päästöt vastaavat yli 1 700:n bensiiniauton vuosittaista käyttöä tai 7 600:tta meno–paluulentoa Helsingistä Espanjaan.</p>
       <p id="c2">”Pääosa päästöistä tulee rakennuksen käytöstä, ei sen rakentamisesta. Siksi lämmityksen kautta päästöihin voidaan vaikuttaa eniten. Ja koska vanhaa rakennuskantaa on paljon, energiaremonteilla niille voidaan antaa uusi elämä eikä vanhoja taloja ole pakko purkaa”, sanoo Leasegreenin toimitusjohtaja Thomas Luther.”</p>
-      <a href="https://www.hs.fi/talous/art-2000006398649.html">Lue lisää</a>
+      <a href="https://www.hs.fi/talous/art-2000006398649.html" target="_blank">Lue lisää</a>
     </div>
   )
 
   const box3 = (
     <div id="box3">
       <p>Suomalaisen hiilijalanjälki on keskimäärin yli 10 000 kg CO2e vuodessa ja siitä noin kolmannes aiheutuu asumisen päästöistä. Tiedätkö, mikä sinun hiilijalanjälkesi on? Täällä voit laskea hiilijalanjälkesi, ja näet myös eroteltuna eri osa-alueiden aiheuttamat päästöt.</p>
-      <a id="bt" href="https://elamantapatesti.sitra.fi/">Laskuriin</a>
+      <a id="bt" href="https://elamantapatesti.sitra.fi/" target="_blank">Laskuriin</a>
       <p>Onko asumisen hiilijalanjälkesi korkea? Voit pienentää sitä esimerkiksi vaihtamalla maalämpöön!</p>
       <img id="foot" src={Foot} alt="carbon-footprint"/>
     </div>
@@ -55,12 +55,12 @@ const navList = [
     },
     {
       color: "#96FFD3",
-      title: "Laatikko 2",
+      title: "Varma esimerkki",
       txt: box2
     },
     {
       color: "#FFB494",
-      title: "Laatikko 3",
+      title: "Hiilijalanjäljestä",
       txt: box3
     }
   ]
@@ -76,7 +76,7 @@ export default function Ympäristö() {
         <div id="main">
             <Header list={navList} title="Ympäristö & Tulevaisuus" logo={KLogo} id="kampanja-logo" />
             <div id="content">
-              <SideBySide color="#99651C" title="Otsikko" txt={textList} img={Pump} />
+              <SideBySide color="#99651C" title="Miksi maalämpö?" txt={textList} img={Pump} />
               <ContainerSet list={conList} />
             </div>
             <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link2="https://www.instagram.com/maaeilampene/"/>
