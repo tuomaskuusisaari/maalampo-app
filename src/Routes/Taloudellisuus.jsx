@@ -35,7 +35,7 @@ const textList = [
 const box1 = (
   <div id="box11">
     <p>“...asun paritalossa, jossa öljylämmitys vaihdettiin vuonna 2008 maalämpöön. Investointi maksoi itsensä takaisin noin viidessä vuodessa vähentyneinä kuluina, järjestelmän odotettu käyttöikä on noin 20 vuotta, eli 15 vuotta pelkkää säästöä.”</p>
-    <a href="https://www.hs.fi/paivanlehti/01102019/art-2000006256513.html" target="_blank">Lue lisää</a>
+    <a href="https://www.hs.fi/paivanlehti/01102019/art-2000006256513.html" target="_blank">HS 1.10.2019</a>
     <img id="inv" src={Invest} alt="investment"/>
   </div>
 )
@@ -48,7 +48,7 @@ const box2 = (
     <li>säästö: 30 000 e/vuosi</li>
     <li>takaisinmaksuaika: 10 vuotta</li>
     <li>käyttöikä 25–30 vuotta</li>
-    <a href="https://www.hs.fi/koti/art-2000006307444.html" target="_blank">Lue lisää</a>
+    <a href="https://www.hs.fi/koti/art-2000006307444.html" target="_blank">HS 14.11.2019</a>
     <img id="check" src={Check} alt="check-board"/>
   </div>
 )
@@ -58,7 +58,7 @@ const box3 = (
     <p>“Raisiossa sijaitseva kolmen kerrostalon Asunto-osakeyhtiö Sorolaisenmäki on energiatehokkuuden mallikansalainen. Vajaa neljä vuotta sitten tehty putki- ja energiatehokkuusremontin yhdistelmä on säästänyt asukkaiden rahoja jo yli 150 000 euron edestä.”</p>
     <p>“Yhtiö teki yli neljä vuotta sitten päätöksen irtautua kaukolämmöstä, sillä asukkaat halusivat siirtyä maalämpöön. Se oli Raisiossa ennakkoluulotonta ja ennenkuulumatonta. Samalla päätettiin ottaa käyttöön asuntojen ilmanvaihdon poistoilman lämpö, joka aiemmin meni harakoille. Se onnistui lämmöntalteenottojärjestelmän avulla."</p>
     <p>"Mäen mukaan yhtiössä oltiin muiden mielestä jopa hullunrohkeita, sillä kukaan naapuriyhtiöistä ei uskaltanut aloittaa vastaavaa hanketta. Onnistuneiden kokemusten myötä naapuritkin ovat sittemmin uusineet lämmitysjärjestelmänsä.“</p>
-    <a href="https://www.hs.fi/koti/art-2000006307444.html" target="_blank">Lue lisää</a>
+    <a href="https://www.hs.fi/koti/art-2000006451006.html" target="_blank">HS 26.3.2020</a>
   </div>
 )
 

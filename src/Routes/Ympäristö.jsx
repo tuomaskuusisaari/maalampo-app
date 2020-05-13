@@ -34,7 +34,7 @@ const navList = [
     <div id="box2">
       <p>Kiinteistösijoittaja Varma aikoo puolittaa vuokratalojensa päästöt energiaremontilla, jossa kaukolämpö vaihdetaan lämpöpumppuihin ja maalämpöön. Varma laskee, että sen neljästäkymmenestä vuokratalosta säästyvät päästöt vastaavat yli 1 700:n bensiiniauton vuosittaista käyttöä tai 7 600:tta meno–paluulentoa Helsingistä Espanjaan.</p>
       <p id="c2">”Pääosa päästöistä tulee rakennuksen käytöstä, ei sen rakentamisesta. Siksi lämmityksen kautta päästöihin voidaan vaikuttaa eniten. Ja koska vanhaa rakennuskantaa on paljon, energiaremonteilla niille voidaan antaa uusi elämä eikä vanhoja taloja ole pakko purkaa”, sanoo Leasegreenin toimitusjohtaja Thomas Luther.”</p>
-      <a href="https://www.hs.fi/talous/art-2000006398649.html" target="_blank">Lue lisää</a>
+      <a href="https://www.hs.fi/talous/art-2000006398649.html" target="_blank">HS 7.2.2020</a>
     </div>
   )
 
