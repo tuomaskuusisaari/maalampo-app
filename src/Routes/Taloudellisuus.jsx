@@ -65,17 +65,17 @@ const box3 = (
 const conList = [
   {
     color: "#FFB494",
-    title: "Laatikko 1",
+    title: "Yksityisasuja",
     txt: box1,
   },
   {
     color: "#96FFD3",
-    title: "Laatikko 2",
+    title: "Tutkimus tukee säästöä",
     txt: box2
   },
   {
     color: "#FFB494",
-    title: "Laatikko 3",
+    title: "Yhteisöllisyys",
     txt: box3
   }
 ]
@@ -85,7 +85,7 @@ export default function Taloudellisuus() {
         <div id="main">
             <Header list={navList} title="Taloudellisuus ja Omavaraisuus" logo={KLogo} id="kampanja-logo" />
             <div id="content">
-              <SideBySide color="#99651C" title="Otsikko" txt={textList} img={Oma} />
+              <SideBySide color="#99651C" title="Kohti omavaraisuutta" txt={textList} img={Oma} />
               <ContainerSet list={conList} />
             </div>
             <Footer social={Ig} logo={Logo} id="sulpu-logo" link="https://www.sulpu.fi/" link2="https://www.instagram.com/maaeilampene/"/>
